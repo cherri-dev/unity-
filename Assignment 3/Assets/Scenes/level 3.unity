@@ -6451,6 +6451,7 @@ GameObject:
   - component: {fileID: 231808929}
   - component: {fileID: 231808934}
   - component: {fileID: 231808933}
+  - component: {fileID: 231808935}
   m_Layer: 0
   m_Name: Doc Idle 1
   m_TagString: Untagged
@@ -6538,7 +6539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231808928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -56.24, y: 11.21, z: 0}
+  m_LocalPosition: {x: -56.14, y: 9.04, z: 0}
   m_LocalScale: {x: 6.5759697, y: 6.5759697, z: 6.5759697}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6608,6 +6609,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3110885, y: 0.52676827}
   m_EdgeRadius: 0
+--- !u!114 &231808935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231808928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252189b8ef72b894eacde5164e48837c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 231808933}
 --- !u!1 &249058551
 GameObject:
   m_ObjectHideFlags: 0
@@ -33963,9 +33977,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1622165009}
   - component: {fileID: 1622165008}
+  - component: {fileID: 1622165010}
   m_Layer: 0
   m_Name: ladder 2 (3)
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34037,6 +34052,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1622165010
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622165007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &1662970895
 GameObject:
   m_ObjectHideFlags: 0
@@ -34215,9 +34256,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1861369444}
   - component: {fileID: 1861369443}
+  - component: {fileID: 1861369445}
   m_Layer: 0
   m_Name: ladder 2
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34289,6 +34331,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1861369445
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861369442}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &1929843012
 GameObject:
   m_ObjectHideFlags: 0
@@ -34299,9 +34367,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1929843014}
   - component: {fileID: 1929843013}
+  - component: {fileID: 1929843015}
   m_Layer: 0
   m_Name: ladder 2 (2)
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34366,13 +34435,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929843012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.45, y: 9.8172, z: 0}
-  m_LocalScale: {x: 16.265474, y: 14.797117, z: 1}
+  m_LocalPosition: {x: -41.81, y: 10.67, z: 0}
+  m_LocalScale: {x: 11.607136, y: 19.703424, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1929843015
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929843012}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.01699334, y: -0.008080661}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.18176377, y: 0.30383867}
+  m_EdgeRadius: 0
 --- !u!1 &1956266903
 GameObject:
   m_ObjectHideFlags: 0
