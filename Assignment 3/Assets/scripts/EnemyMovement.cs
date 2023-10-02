@@ -17,4 +17,12 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed);
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.tag == "Player")
+        {
+            col.GetComponent<Health>().TakeDamage(1);
+        }
+    }
 }
