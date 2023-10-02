@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,9 +110,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
-        width: 8
-        height: 8
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,69 +122,6 @@ TextureImporter:
       bones: []
       spriteID: ad78f1952d5d68e44b0e02ba5e357747
       internalID: -1769786623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork 7 (2)_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad9eb9f716cdeaf41828ad24685ecdbe
-      internalID: 1229375320
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork 7 (2)_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 626bc192aa79f4341833d66391899c02
-      internalID: -1397901592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork 7 (2)_3
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d5faa77ba66afd4da677dee794eeb9f
-      internalID: 327243098
       vertices: []
       indices: 
       edges: []
@@ -200,10 +137,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork 7 (2)_2: -1397901592
-      Untitled_Artwork 7 (2)_1: 1229375320
       Untitled_Artwork 7 (2)_0: -1769786623
-      Untitled_Artwork 7 (2)_3: 327243098
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
