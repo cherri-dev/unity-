@@ -66,5 +66,24 @@ public class doctor : MonoBehaviour
             isJumping = false;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if(collision.CompareTag("Collectable"))
+
+        {
+            print("we have collected an item");
+
+            Destroy(collision.gameObject);
+        }
+
+
+    }
+
+
+ 
+
+
 }
 
