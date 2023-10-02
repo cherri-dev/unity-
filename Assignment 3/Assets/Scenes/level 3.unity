@@ -6690,7 +6690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 231808928}
-  moveSpeed: 0.5
+  moveSpeed: 0.2
 --- !u!95 &166177913
 Animator:
   serializedVersion: 4
@@ -6909,7 +6909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 095bedd38278ee64a980e433cdb5ee38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 0
+  startingHealth: 3
 --- !u!1 &249058551
 GameObject:
   m_ObjectHideFlags: 0
@@ -33486,7 +33486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 231808928}
-  moveSpeed: 0.5
+  moveSpeed: 0.2
 --- !u!95 &962172711
 Animator:
   serializedVersion: 4
@@ -35457,7 +35457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 231808928}
-  moveSpeed: 0.5
+  moveSpeed: 0.2
 --- !u!95 &1975694948
 Animator:
   serializedVersion: 4
