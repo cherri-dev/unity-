@@ -19,7 +19,6 @@ public class Health : MonoBehaviour
     {
       anim.SetTrigger("hurt");
     }
-
     else
     {
       anim.SetTrigger("die");
