@@ -588,8 +588,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 1039260681}
-  moveSpeed: 9
-  jumpSpeed: 16
+  moveSpeed: 8
+  jumpSpeed: 15
   _anim: {fileID: 1039260683}
 --- !u!212 &1039260685
 SpriteRenderer:
