@@ -13,6 +13,7 @@ public class doctor : MonoBehaviour
     Vector2 myScale;
     float myScaleX;
     bool isJumping;
+    bool isAttacking;
 
     void Start()
     {
@@ -60,10 +61,6 @@ public class doctor : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && isAttacking == false)
         {
             isAttacking = true;
-            _rb.velocity = new Vector2
-            (_rb.velocity.x, attackSpeed);
-
-            _anim.SetBool("isAttack", true);
           
         }
 
