@@ -17,24 +17,24 @@ public class EnemyBullet : MonoBehaviour
         Vector3 direction = player.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
 
-        float rot = Mathf.Atan2()
-        transform.rotation = Quaternion.Euler(0, 0, rot);
+Destroy(gameObject,5);
+        // float rot = Mathf.Atan2();
+        // transform.rotation = Quaternion.Euler(0, 0, rot);
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        {
-            Destroy(gameObject);
-        }
+           Vector3 direction = player.transform.position - transform.position;
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<playerHealth>().health -= 20;
+            other.gameObject.GetComponent<Health>().TakeDamage(20);
             Destroy(gameObject);
         }
     }
