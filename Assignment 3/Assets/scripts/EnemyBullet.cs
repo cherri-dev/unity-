@@ -34,7 +34,7 @@ Destroy(gameObject,5);
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Health>().TakeDamage(20);
+            other.gameObject.GetComponent<Health>().TakeDamage(1);
             Destroy(gameObject);
         }
     }

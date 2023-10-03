@@ -56,6 +56,17 @@ public class doctor : MonoBehaviour
         {
             _anim.SetBool("isRun", false);
         }
+
+        if (Input.GetKeyDown(KeyCode.F) && isAttacking == false)
+        {
+            isAttacking = true;
+            _rb.velocity = new Vector2
+            (_rb.velocity.x, attackSpeed);
+
+            _anim.SetBool("isAttack", true);
+          
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D col)
