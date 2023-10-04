@@ -29,6 +29,11 @@ public class Health : MonoBehaviour
             dead = true;
         }
     }
-    
+
+    public void AddHp()
+    {
+        currentHealth++;
+    }
+
 
 }

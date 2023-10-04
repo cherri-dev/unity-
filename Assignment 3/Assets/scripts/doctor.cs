@@ -88,8 +88,12 @@ public class doctor : MonoBehaviour
 
         {
             print("we have collected an item");
-
-            Destroy(collision.gameObject);
+            if (GetComponent<Health>().currentHealth < 3)
+            {
+                GetComponent<Health>().AddHp();
+                Destroy(collision.gameObject);
+            }
+         
         }
 
 
