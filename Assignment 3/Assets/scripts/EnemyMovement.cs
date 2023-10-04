@@ -15,6 +15,10 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!GetComponent<Enemy>().isDie)
+        {
+
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed);
+        }
     }
 }

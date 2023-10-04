@@ -31,10 +31,10 @@ public class DoctorAttack : MonoBehaviour
 
             if(timer >= timeToAttack)
             {
-            timer = 0;
-            attacking = false;
-            attackArea.SetActive(attacking);
-            _anim.SetBool("isAttack",false);
+                timer = 0;
+                attacking = false;
+                attackArea.SetActive(attacking);
+                _anim.SetBool("isAttack",false);
             }
         }
     }
@@ -42,7 +42,8 @@ public class DoctorAttack : MonoBehaviour
     {
         attacking = true;
         attackArea.SetActive(attacking);
-            _anim.SetBool("isAttack",true);
-            _anim.SetTrigger("isAttack2");
+        _anim.SetBool("isAttack",true);
+        _anim.SetTrigger("isAttack2");
     }
+
 }
