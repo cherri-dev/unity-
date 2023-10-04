@@ -23,6 +23,12 @@ public class doctor : MonoBehaviour
 
     void Update()
     {
+        if (GetComponent<Health>().dead)
+        {
+            _rb.velocity = new Vector2(0, _rb.velocity.y);
+            return;
+        }
+
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
             myScale.x = -myScaleX;
@@ -31,7 +37,7 @@ public class doctor : MonoBehaviour
         {
             myScale.x = myScaleX;
         }
-        
+
         transform.localScale = myScale;
 
         _rb.velocity = new Vector2
@@ -46,7 +52,7 @@ public class doctor : MonoBehaviour
             (_rb.velocity.x, jumpSpeed);
 
             _anim.SetBool("isJump", true);
-          
+
         }
 
         if (Input.GetAxisRaw("Horizontal") != 0)
@@ -61,7 +67,7 @@ public class doctor : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && isAttacking == false)
         {
             isAttacking = true;
-          
+
         }
 
     }
@@ -78,7 +84,7 @@ public class doctor : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if(collision.CompareTag("Collectable"))
+        if (collision.CompareTag("Collectable"))
 
         {
             print("we have collected an item");
@@ -90,7 +96,7 @@ public class doctor : MonoBehaviour
     }
 
 
- 
+
 
 
 }
