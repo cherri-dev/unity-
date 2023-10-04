@@ -7,6 +7,15 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     public GameObject player;
     public float moveSpeed;
+    [SerializeField] private float damage;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            collision.GetComponent<Health>().TakeDamage(damage);
+        }
+    }
     void Start()
     {
         
