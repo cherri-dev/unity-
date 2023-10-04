@@ -15133,6 +15133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  dead: 0
 --- !u!114 &1382363607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15808,6 +15809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0190c9e5f4f7134cb0c8371fb9ab6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 1382363606}
   totalhealthBar: {fileID: 104055799}
   currenthealthBar: {fileID: 1284056545}
