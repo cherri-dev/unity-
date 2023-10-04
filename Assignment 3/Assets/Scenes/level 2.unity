@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1039260678}
-  moveSpeed: 0.02
+  moveSpeed: 0.01
 --- !u!114 &165198732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1039260678}
-  moveSpeed: 0.02
+  moveSpeed: 0.01
 --- !u!114 &180518424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,7 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1039260678}
-  moveSpeed: 0.02
+  moveSpeed: 0.01
 --- !u!114 &496050578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5013,7 +5013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1039260678}
-  moveSpeed: 0.02
+  moveSpeed: 0.01
 --- !u!114 &1981212120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5241,7 +5241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1039260678}
-  moveSpeed: 0.02
+  moveSpeed: 0.01
 --- !u!114 &2073740807
 MonoBehaviour:
   m_ObjectHideFlags: 0
