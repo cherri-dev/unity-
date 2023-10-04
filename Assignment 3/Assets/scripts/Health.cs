@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
+<<<<<<< HEAD
     }
     public void TakeDamage(float _damage)
     {
@@ -36,4 +37,23 @@ public class Health : MonoBehaviour
     }
 
 
+=======
+    }
+    public void TakeDamage(float _damage)
+    {
+        currentHealth -= _damage;
+        
+        if (currentHealth > 0)
+        {
+            anim.SetTrigger("hurt");
+        }
+        else
+        {
+            anim.SetTrigger("die");
+            dead = true;
+        }
+    }
+    
+
+>>>>>>> parent of 556b543 (.)
 }
